@@ -10,7 +10,7 @@ import router from './routes';
 
 //Conexión a la base de datos MongoDB
 mongoose.Promise=global.Promise;
-const dbUrl = 'mongodb://localhost:27017/dbsistema';
+const dbUrl = 'mongodb://merlote:90014z480484@ds033143.mlab.com:33143/heroku_x5f4l145';
 mongoose.connect(dbUrl, {useCreateIndex:true, useNewUrlParser: true})
 .then(mongoose => console.log('Conectado a la BD en el puerto 27017'))
 .catch(err => console.log(err));
